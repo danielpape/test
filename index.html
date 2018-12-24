@@ -22,16 +22,33 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:400i,400" rel="stylesheet">
     <style>
     .hello__title {
+        margin-top: 32px;
+        margin-bottom: 32px;
+        font-size: 40px;
+        line-height: 48px;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(-35deg, #4CAF50, #0aaea4);
+	-webkit-text-fill-color: transparent;
+  padding-bottom: 2px;
+    }
+    @media (min-width: 992px) {
+    .hello__title {
         margin-top: 64px;
-        margin-bottom: 64px;
-        font-size: 48px;
-        line-height: 64px;
+        margin-bottom: 32px;
+        font-size: 64px;
+        line-height: 72px;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(-35deg, #4CAF50, #0aaea4);
+	-webkit-text-fill-color: transparent;
+  padding-bottom: 2px;
     }
     .hello__copy {
-      margin-top:32px
+      margin-top:16px
       margin-bottom:64px;
       max-width: 400px;
+      padding-bottom: 2px;
     }
+  }
     </style>
 </head>
 
@@ -46,7 +63,7 @@
         <div class="container" id="Welcome" class="welcomeText">
             <div class="row">
                 <div class="col-sm-10 offset-sm-1">
-                    <h1 class="hello__title">Daniel Pape</br>A digital product designer</h1>
+                    <h1 class="hello__title">Daniel Pape,</br>User Experience Designer</h1>
                     <p class="hello__copy">I am currently designing user-focused products at <b>Next</b>, previously at <b>The Independent</b>, <b>London Evening Standard</b> &amp; <b>Photobox</b></p>
                     <p class="hello__copy"> Every month over 100 million people visit webpages that I have designed</p>
 
