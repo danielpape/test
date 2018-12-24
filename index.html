@@ -16,364 +16,60 @@
     <meta property="og:locale" content="en_US">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
     <title>Daniel Pape: Designer</title>
-    <link href="https://fonts.googleapis.com/css?family=Palanquin:700,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Palanquin:700,500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik:400i,400" rel="stylesheet">
     <style>
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            /* font-family: "Rubik", sans-serif; */
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 29px;
-            opacity: 0.9;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            border-bottom: 2px solid #00a9e5;
-            padding-bottom: 2px;
-        }
-
-        .heroImage {
-          display: block;
-          max-width: 310px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 32px;
-        }
-
-        .slideImage {
-          display: block;
-          max-width: 310px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        a:hover {
-            text-decoration: none;
-            color: inherit;
-            border-bottom: 2px solid #dddddd;
-        }
-
-        .welcomeText {
-            margin-top: 48px;
-            margin-bottom: 48px;
-        }
-
-        .hello {
-            margin-top: 16px;
-            margin-bottom: 16px;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        .number {
-            color: #842AC0;
-            margin-bottom: 2px;
-            font-size: 1.2rem;
-        }
-
-        .caseStudy {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            color: black;
-            opacity: 0.3;
-            font-family: 'Rubik', sans-serif;
-        }
-
-        .infoBoxHeader {
-            font-size: 32px;
-            margin-top: 48px;
-            margin-bottom: 24px;
-        }
-
-        .infoBoxBody {
-            font-size: 19px;
-            line-height: 27px;
-            margin-top: 32px;
-        }
-
-        h1 {
-            font-size: 44px;
-            line-height: 46px;
-            font-family: 'Palanquin', sans-serif;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-family: 'Palanquin', sans-serif;
-            font-weight: 700;
-            font-size: 24px;
-        }
-
-        h4 {
-            font-weight: 400;
-        }
-
-        .navbar-toggler {
-            border: none;
-        }
-
-        #closingMessage {
-            padding: 128px 0px;
-        }
-
-        #closingMessageLink {
-            text-decoration: none;
-            border-bottom: 1px solid #009688;
-            color: #e3e3e3;
-        }
-        /* The dots/bullets/indicators */
-
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        .dot2 {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active,
-        .dot:hover {
-            background-color: #717171;
-        }
-        /* Fading animation */
-
-        .fade2 {
-            -webkit-animation-name: fade2;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade2;
-            animation-duration: 1.5s;
-        }
-
-        @-webkit-keyframes fade2 {
-            from {
-                opacity: 0.5
-            }
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes fade2 {
-            from {
-                opacity: 0.5
-            }
-            to {
-                opacity: 1
-            }
-        }
-
-        .mySlides {
-            display: none;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .mySlides2 {
-            display: none;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        /* Next & previous buttons */
-
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 16px;
-            border-width: 0px;
-            opacity: 0.3;
-        }
-
-        .prev {
-            margin-left: -35px;
-        }
-        /* Position the "next button" to the right */
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-            margin-right: -20px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-
-        .prev:hover,
-        .next:hover {
-            opacity: 1.0;
-            border-bottom: 0px;
-        }
-
-        .card {
-          border-top-left-radius: 8px;
-border-top-right-radius: 8px;
-border-bottom-right-radius: 8px;
-border-bottom-left-radius: 8px;
-box-shadow: rgba(0, 0, 0, 0.0784314) 0px 4px 8px;
-transition-duration: 0.2s;
-transition-timing-function: ease-in-out;
-transition-delay: initial;
-transition-property: all;
-margin-bottom:24px;
-        }
-
-        .card:hover {
-          box-shadow: rgba(0, 0, 0, 0.0980392) 0px 8px 24px;
-transform: translateY(-3px);
-transition-duration: 0.2s;
-transition-timing-function: ease-in-out;
-transition-delay: initial;
-transition-property: all;
-        }
-
-        .cardTitle{
-          margin:16px;
-          border-bottom: none;
-        }
-
-        .cardTitle:hover {
-          border-bottom: none;
-        }
-
-        .cardImage {
-          border-top-left-radius: 8px;
-border-top-right-radius: 8px;
-        }
-
-        @media (min-width: 992px) {
-          
-          .hideOver992 {
-            display: none;
-          }
-            
-            .next {
-                right: 0;
-                border-radius: 3px 0 0 3px;
-                margin-right: 45px;
-            }
-            .prev {
-                margin-left: 30px;
-
-            }
-
-            .heroImage{
-              max-width: 400px;
-            }
-
-            .slideImage {
-              max-width: 400px;
-            }
-
-            #headertext {
-                margin-top: 202px;
-            }
-            #ESImage {
-                width: 460px;
-                float: right;
-                margin-right: -46px;
-            }
-            .hello {
-                margin-top: 16px;
-                margin-bottom: 16px;
-                width: 100%;
-            }
-            .infoBoxHeader {
-                font-size: 40px;
-                margin-top: 48px;
-            }
-            .infoBoxBody {
-                font-size: 19px;
-                line-height: 27px;
-                style="margin-top:64px;
-
-            }
-            h1 {
-                font-size: 40px;
-                line-height: 60px;
-                width: 60%;
-                margin-bottom: 16px;
-            }
-            #image2 {
-                margin-top: 64px;
-            }
-            #image3 {
-                margin-top: 128px;
-            }
-        }
+    .hello__title {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .hello__copy {
+      margin-top:32px
+      margin-bottom:64px;
+      max-width: 80%;
+    }
     </style>
 </head>
 
 <body style="overflow-x: hidden;">
-    <nav class="navbar navbar-expand-lg navbar-light container" style="margin-top:16px;">
-        <svg class="marque" version="1.0" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 414.000000 446.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,446.000000) scale(0.100000,-0.100000)" fill="#212121" stroke="none"><path d="M627 4398 c-93 -89 -529 -512 -572 -555 -24 -23 -41 -44 -38 -47 2 -2 4 -855 4 -1894 l0 -1890 1032 2 c568 1 1047 5 1065 8 18 4 52 10 75 13 385 53 758 188 1051 383 363 240 610 562 755 985 22 64 38 117 36 117 -2 0 2 18 10 39 7 22 16 52 18 68 3 15 12 69 20 118 29 166 37 266 37 470 0 156 -5 264 -16 335 -2 19 -7 55 -10 80 -3 25 -17 99 -31 165 -114 546 -418 982 -886 1273 -82 52 -279 150 -362 181 -33 13 -69 27 -80 31 -64 27 -273 88 -360 105 -78 15 -194 36 -230 40 -22 3 -58 8 -80 11 -22 3 -343 7 -713 9 l-674 2 -51 -49z m1428 -60 c11 -3 47 -9 80 -13 33 -3 114 -18 180 -31 708 -147 1231 -518 1494 -1059 69 -141 143 -363 164 -490 3 -16 8 -48 12 -70 3 -22 8 -51 11 -65 14 -83 19 -181 19 -385 0 -254 -4 -315 -36 -495 -15 -86 -16 -94 -43 -192 -142 -517 -472 -915 -965 -1162 -232 -117 -522 -206 -786 -241 -27 -4 -61 -9 -75 -13 -47 -10 -1363 -14 -1369 -3 -4 5 -8 676 -10 1489 l-3 1480 259 -1 258 -2 0 -1230 c0 -676 3 -1232 7 -1235 10 -8 745 -4 803 4 449 61 776 206 1038 458 247 239 386 546 424 938 8 92 8 279 0 382 -33 378 -166 679 -411 924 -256 255 -589 408 -1021 467 -75 11 -303 13 -1006 13 -500 -1 -909 2 -909 5 0 3 48 52 108 109 59 56 177 171 262 255 85 83 163 156 174 162 19 10 1299 11 1341 1z m-25 -642 c25 -4 77 -11 115 -17 318 -48 633 -189 834 -375 318 -295 453 -702 418 -1258 -4 -60 -9 -111 -11 -115 -2 -3 -7 -28 -10 -56 -23 -169 -106 -383 -212 -543 -189 -283 -524 -489 -934 -571 -173 -35 -231 -39 -555 -38 l-310 2 -2 262 -2 263 302 1 c166 0 313 2 327 5 14 2 48 9 75 15 28 6 61 13 75 15 54 10 200 65 266 100 289 152 460 397 498 713 8 64 8 228 1 291 -45 367 -268 629 -630 743 -72 23 -114 32 -235 52 -32 6 -303 7 -1086 6 l-331 -1 5 -1539 4 -1540 -253 2 -254 2 -1 1796 -1 1796 931 -2 c512 -1 951 -5 976 -9z m50 -620 c115 -21 114 -20 207 -54 173 -61 329 -183 409 -318 88 -151 115 -269 110 -479 -4 -154 -6 -172 -32 -264 -27 -93 -99 -227 -161 -296 -84 -94 -257 -203 -397 -250 -177 -59 -223 -64 -560 -62 l-309 2 -1 858 c-1 473 1 862 4 867 9 14 39 15 344 13 221 -1 324 -5 386 -17z"></path></g></svg>
-        <span class="hideOver992" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    Contact: <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">danielwpape@gmail.com</a>
-  </span>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-            <span class="navbar-text">
-      Contact: <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">danielwpape@gmail.com</a>
-    </span>
+    <nav class="navbar">
+        <div class="container" style="padding-top:8px;"> <span class="navbar-brand"><svg class="marque" version="1.0" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 414.000000 446.000000" preserveAspectRatio="xMidYMid meet"><g class="inner-marque" transform="translate(0.000000,446.000000) scale(0.100000,-0.100000)" stroke="none"><path d="M627 4398 c-93 -89 -529 -512 -572 -555 -24 -23 -41 -44 -38 -47 2 -2 4 -855 4 -1894 l0 -1890 1032 2 c568 1 1047 5 1065 8 18 4 52 10 75 13 385 53 758 188 1051 383 363 240 610 562 755 985 22 64 38 117 36 117 -2 0 2 18 10 39 7 22 16 52 18 68 3 15 12 69 20 118 29 166 37 266 37 470 0 156 -5 264 -16 335 -2 19 -7 55 -10 80 -3 25 -17 99 -31 165 -114 546 -418 982 -886 1273 -82 52 -279 150 -362 181 -33 13 -69 27 -80 31 -64 27 -273 88 -360 105 -78 15 -194 36 -230 40 -22 3 -58 8 -80 11 -22 3 -343 7 -713 9 l-674 2 -51 -49z m1428 -60 c11 -3 47 -9 80 -13 33 -3 114 -18 180 -31 708 -147 1231 -518 1494 -1059 69 -141 143 -363 164 -490 3 -16 8 -48 12 -70 3 -22 8 -51 11 -65 14 -83 19 -181 19 -385 0 -254 -4 -315 -36 -495 -15 -86 -16 -94 -43 -192 -142 -517 -472 -915 -965 -1162 -232 -117 -522 -206 -786 -241 -27 -4 -61 -9 -75 -13 -47 -10 -1363 -14 -1369 -3 -4 5 -8 676 -10 1489 l-3 1480 259 -1 258 -2 0 -1230 c0 -676 3 -1232 7 -1235 10 -8 745 -4 803 4 449 61 776 206 1038 458 247 239 386 546 424 938 8 92 8 279 0 382 -33 378 -166 679 -411 924 -256 255 -589 408 -1021 467 -75 11 -303 13 -1006 13 -500 -1 -909 2 -909 5 0 3 48 52 108 109 59 56 177 171 262 255 85 83 163 156 174 162 19 10 1299 11 1341 1z m-25 -642 c25 -4 77 -11 115 -17 318 -48 633 -189 834 -375 318 -295 453 -702 418 -1258 -4 -60 -9 -111 -11 -115 -2 -3 -7 -28 -10 -56 -23 -169 -106 -383 -212 -543 -189 -283 -524 -489 -934 -571 -173 -35 -231 -39 -555 -38 l-310 2 -2 262 -2 263 302 1 c166 0 313 2 327 5 14 2 48 9 75 15 28 6 61 13 75 15 54 10 200 65 266 100 289 152 460 397 498 713 8 64 8 228 1 291 -45 367 -268 629 -630 743 -72 23 -114 32 -235 52 -32 6 -303 7 -1086 6 l-331 -1 5 -1539 4 -1540 -253 2 -254 2 -1 1796 -1 1796 931 -2 c512 -1 951 -5 976 -9z m50 -620 c115 -21 114 -20 207 -54 173 -61 329 -183 409 -318 88 -151 115 -269 110 -479 -4 -154 -6 -172 -32 -264 -27 -93 -99 -227 -161 -296 -84 -94 -257 -203 -397 -250 -177 -59 -223 -64 -560 -62 l-309 2 -1 858 c-1 473 1 862 4 867 9 14 39 15 344 13 221 -1 324 -5 386 -17z"></path></g></svg>
+</span>
+            <span style="float:right"><a class="topnav__link" href="#about" style="margin-right:16px;">About</a> <a  class="topnav__link" href="#work" style="margin-right:16px;">Work</a> <a  class="topnav__link" href="mailto:danielwpape@gmail.com">danielwpape@gmail.com</a></span>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding:0;">
         <div class="container" id="Welcome" class="welcomeText">
             <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <h1 class="hello">Hello, I'm Daniel Pape</h1>
-<p>I am a senior digital product designer based in London where I design user-centred interfaces for The Independent & London Evening Standard. Every month over 100 million people visit webpages that I have designed.</p>
+              <div class="col-sm-6">
+                <img src="images/squareimage.png" width="100%" style="opacity:0.5">
+              </div>
+                <div class="col-sm-6">
+                    <h1 class="hello__title">Daniel Pape</br>A digital product designer</h1>
+                    <p class="hello__copy">I am currently designing user-focused products at <b>Next</b>, previously at <b>The Independent</b>, <b>London Evening Standard</b> &amp; <b>Photobox</b></p><p> Every month over 100 million people visit webpages that I have designed</p>
 
-
-<p>My approach is to work closely with users and stakeholders to design intuitive websites that deliver on usability, commerciality and functionality: from research, to wireframe to pixel-perfect design.</p>
-<p style="margin-bottom:64px;">I'm currently open to new job opportunities, so please feel free to <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">contact me</a> if you are looking to hire into your team.</p>
-
-                    </div>
+                </div>
             </div>
         </div>
+        <svg class="bottom-angle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><polygon fill="#f2f2f2" points="0,100 100,0 100,100"/></svg>
     </div>
 
-    <div class="container-fluid" style="background: radial-gradient(ellipse at center,rgba(208,223,243,.3) 0,#E9EFFF 150%)">
-        <div class="container" id="Research">
+    <div class="container-fluid standard-container">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-5">
-                    <h2 class="infoBoxHeader">Evening Standard</h2>
-                    <h2><span style="opacity:0.6;color:black;font-weight:400">Component-based editorial design</span></h2>
-                    <p class="infoBoxBody">In mid 2017 I was the lead designer on a major redesign of the Evening Standard website. My role spanned from user research and requirement gathering, to wireframing and gathering feedback, right through to the final pixel-perfect
+                    <h2 class="project__header">Evening Standard</h2>
+                    <h2 class="project__subheader">Component-based editorial design</h2>
+                    <p class="project__copy">In mid 2017 I was the lead designer on a major redesign of the Evening Standard website. My role spanned from user research and requirement gathering, to wireframing and gathering feedback, right through to the final pixel-perfect
                         mockups and interaction animations.
                     </p>
-                    <p>The solution was a library of 17 components that can be curated and adapted to create a flexible, coherant page layouts.</p>
+                    <p class="project__copy">The solution was a library of 17 components that can be curated and adapted to create a flexible, coherant page layouts.</p>
+                    <a href="/case-studies/evening-standard.html">Read full case study</a>
+
                 </div>
                 <div class="col-sm-7" style="align-content:center;">
                     <div style="text-align:center;margin-top: 32px;margin-bottom: 16px;;">
@@ -406,201 +102,200 @@ border-top-right-radius: 8px;
             </div>
         </div>
     </div>
-
-    <div class="container-fluid" style="background: linear-gradient(to top, #f5f5f5, #ffffff)">
-        <div class="container" id="Research">
-            <div class="row">
-                <div class="col-sm-5">
-                    <h2 class="infoBoxHeader">The Independent</h2>
-                    <h2><span style="opacity:0.6;color:black;font-weight:400;">Goal-oriented eCommerce product page</span></h2>
-                    <p class="infoBoxBody">In March 2016 I was the lead designer for the launch of The Independent Daily Edition, which included the product page which started the user journey for purchasing a subscription.</p>
-                    <p>I used clear design style to communicate the benefits of the product to potential subscribers, which retained some of the motifs used by the legacy print product. The site had a very high rate of conversion and doubled the number of print subscribers within 1 month of launch.</p>
+    <div class="container">
+            <div class="row ">
+              <div class="col-sm-5 ">
+                <h2 class="project__header">The Independent</h2>
+                <h2 class="project__subheader">Goal-oriented eCommerce product page</h2>
+                <p class="project__copy">In March 2016 I was the lead designer for the launch of The Independent Daily Edition, which included the product page which started the user journey for purchasing a subscription.</p>
+                <p class="project__copy">I used clear design style to communicate the benefits of the product to potential subscribers, which retained some of the motifs used by the legacy print product. The site had a very high rate of conversion and doubled the number
+                  of print subscribers within 1 month of launch.</p>
+                <a href="/case-studies/the-independent.html ">Read full case study</a>
+              </div>
+              <div class="col-sm-7 " style="align-content:center; ">
+                <div style="text-align:center;margin-top: 32px;margin-bottom: 16px;; ">
+                  <span class="dot2 " onclick="currentSlide2(1) "></span>
+                  <span class="dot2 " onclick="currentSlide2(2) "></span>
+                  <span class="dot2 " onclick="currentSlide2(3) "></span>
                 </div>
-                <div class="col-sm-7" style="align-content:center;">
-                    <div style="text-align:center;margin-top: 32px;margin-bottom: 16px;;">
-                        <span class="dot2" onclick="currentSlide2(1)"></span>
-                        <span class="dot2" onclick="currentSlide2(2)"></span>
-                        <span class="dot2" onclick="currentSlide2(3)"></span>
+                <div class="mySlides2 fade2 ">
+                  <img src="images/IND_Landingpage1.png " class="slideImage ">
                     </div>
-                    <div class="mySlides2 fade2">
-                        <img src="images/IND_Landingpage1.png" class="slideImage">
+                  <div class="mySlides2 fade2 ">
+                    <img src="images/IND_Landingpage2.png " class="slideImage ">
                     </div>
-                    <div class="mySlides2 fade2">
-                        <img src="images/IND_Landingpage2.png" class="slideImage">
+                    <div class="mySlides2 fade2 ">
+                      <img src="images/IND_Landingpage3.png " class="slideImage ">
                     </div>
-                    <div class="mySlides2 fade2">
-                        <img src="images/IND_Landingpage3.png" class="slideImage">
-                    </div>
-                    <a class="prev" onclick="plusSlides2(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
-                        <path d="M0 0h24v24H0z" fill="none"/>
+                      <a class="prev " onclick="plusSlides2(-1) "><svg xmlns="http://www.w3.org/2000/svg " width="48 " height="48 " viewBox="0 0 24 24 ">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z "/>
+                        <path d="M0 0h24v24H0z " fill="none "/>
                     </svg>
 </a>
-                    <a class="next" onclick="plusSlides2(1)">
-                        <?xml version="1.0" encoding="utf-8"?>
+                      <a class="next " onclick="plusSlides2(1) ">
+                        <?xml version="1.0 " encoding="utf-8 "?>
                         <!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<path d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z"/>
-<path fill="none" d="M0,0h24v24H0V0z"/>
+                        <svg version="1.1 " id="Layer_1 " xmlns="http://www.w3.org/2000/svg " xmlns:xlink="http://www.w3.org/1999/xlink " x="0px " y="0px " width="48px " height="48px " viewBox="0 0 24 24 " enable-background="new 0 0 24 24
+        " xml:space="preserve ">
+<path d="M8.59,16.59L13.17,12L8.59,7.41L10,6l6,6l-6,6L8.59,16.59z "/>
+<path fill="none " d="M0,0h24v24H0V0z "/>
 </svg></a>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
+              </div>
 
-    <div class="container-fluid" style="background: white">
-        <div class="container" id="Research">
-            <div class="row">
-                <div class="col-sm-5">
-                    <h2 class="infoBoxHeader">User acquisiton</h2>
-                    <h2><span style="opacity:0.6;color:black;font-weight:400;">Interactive GDPR–compliant sign up component</span></h2>
-                    <p class="infoBoxBody">In 2018 I was the lead designer for a project to redesign all of the user-acquisition components across The Independent, Evening Standard and Homes & Property.</p>
-                    <p> My solution was to use progressive disclosure to gather the user's information in logical steps, and used intuitive interaction design to create a smooth user experience.</p>
+              <div class="container-fluid user-acquisiton-container ">
+                <div class="container " id="Research ">
+                  <div class="row ">
+                    <div class="col-sm-5 ">
+                      <h2 class="project__header ">User acquisiton</h2>
+                      <h2 class="project__subheader ">Interactive GDPR–compliant sign up component</h2>
+                      <p class="project__copy ">In 2018 I was the lead designer for a project to redesign all of the user-acquisition components across The Independent, Evening Standard and Homes & Property.</p>
+                      <p class="project__copy"> My solution was to use progressive disclosure to gather the user's information in logical steps, and used intuitive interaction design to create a smooth user experience.</p>
+                    </div>
+                    <div class="col-sm-7 ">
+                      <video muted="true " playsinline="true " autoplay="true " controls="true " loop="true " preload="auto " role="presentation " src="video/ES_Signup2.mov " poster="images/ES_SignupSplash.png " class="heroImage "></video>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-sm-7">
-                    <video muted="true" playsinline="true" autoplay="true" loop="true" preload="auto" role="presentation" src="video/ES_Signup2.mov" poster="images/ES_SignupSplash.png" class="heroImage"></video>
-                </div>
-            </div>
-        </div>
-    </div>
+              </div>
 
-    <div class="container-fluid" style="background: radial-gradient(ellipse at center,rgba(208,223,243,.3) 0,#E9EFFF 150%)">
-        <div class="container" id="Research">
-            <div class="row">
-                <div class="col-sm-5">
-                    <h2 class="infoBoxHeader">Eve Alarm</h2>
-                    <h2><span style="opacity:0.6;color:black;font-weight:400;">App Store featured alarm app fully designed and coded</span></h2>
-                    <p class="infoBoxBody">Eve Alarm is an alarm that reminds you to go to bed. After launching the app in April 2013 it was featured on the <em>What's Hot</em> section of the UK & US App Stores which led to over 10,000 downloads in the first week.</p>
+              <div class="container-fluid eve-container ">
+                <div class="container " id="Research ">
+                  <div class="row ">
+                    <div class="col-sm-5 ">
+                      <h2 class="project__header ">Eve Alarm</h2>
+                      <h2 class="project__subheader ">App Store featured alarm app fully designed and coded</h2>
+                      <p class="project__copy ">Eve Alarm is an alarm app for iPhone that reminds you to go to bed, which I designed and coded from scratch.</p>
+                      <p> After launching the app in April 2013 it was featured on the <em>What's Hot</em> section of the UK & US App Stores which led to over 10,000 downloads in the first week.</p>
+                    </div>
+                    <div class="col-sm-7 ">
+                      <img src="images/Eve_Homescreen.png " class="heroImage ">
                 </div>
-                <div class="col-sm-7">
-                    <img src="images/Eve_Homescreen.png" class="heroImage">
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" style="background: white;">
-        <div class="container" id="Research" >
-            <div class="row">
-              <div class="col-sm-12">
-                  <h2 class="infoBoxHeader">Articles</h2>
-                </div>
-                <div class="col-sm-4">
-                  <a href="articles/wayfinding.html">
-                  <div class="card">
-                    <img src="images/wayfinding.png" class="cardImage" style="width:100%">
-                    <h2 class="cardTitle">Wayfinding</h2>
-                    <p style="padding-left:16px;padding-right:16px;font-size:16px;line-height:1.3;">Techniques for improving users' navigation around your app or website.</p>
-                    <p style="padding-left:16px;padding-right:16px;font-size:16px;font-weight:600;">Read Article</p>
+                <div class="container-fluid articles ">
+                  <div class="container ">
+                    <div class="row " style="padding-bottom:48px; ">
+                      <div class="col-sm-12 ">
+                        <h2 class="project__header " style="margin-bottom:24px ">Articles</h2>
+                      </div>
+                      <div class="col-sm-4 ">
+                        <a href="articles/wayfinding.html ">
+                  <div class="card ">
+                    <h2 class="card__header ">Wayfinding</h2>
+                    <p class="card__subheader ">Techniques for improving users' navigation around your app or website.</p>
+                    <p class="card__readmore ">Read Article</p>
                   </div>
                 </div>
                 </a>
-                <div class="col-sm-4">
-                  <a href="articles/progressiveDisclosure.html">
-                  <div class="card">
-                  <img src="images/progressiveDisclosure.png" class="cardImage" style="width:100%">
-                  <h2 class="cardTitle">Progressive Disclosure</h2>
-                  <p style="padding-left:16px;padding-right:16px;font-size:16px;line-height:1.3;">How to manage the complexity of your information archetecture</p>
-                  <p style="padding-left:16px;padding-right:16px;font-size:16px;font-weight:600;">Read Article</p>
+                        <div class="col-sm-4 ">
+                          <a href="articles/progressiveDisclosure.html ">
+                  <div class="card ">
+                  <h2 class="card__header ">Progressive Disclosure</h2>
+                  <p class="card__subheader ">How to manage the complexity of your information archetecture</p>
+                  <p class="card__readmore ">Read Article</p>
                 </div>
               </div>
               </a>
-                <div class="col-sm-4">
-                  <a href="articles/affordance.html">
-                  <div class="card">
-                  <img src="images/affordance.png" class="cardImage" style="width:100%">
-                  <h2 class="cardTitle">Affordance</h2>
-                  <p style="padding-left:16px;padding-right:16px;font-size:16px;line-height:1.3;">Designing components that visual style indicate their functionality</p>
-                  <p style="padding-left:16px;padding-right:16px;font-size:16px;font-weight:600;">Read Article</p>
+                          <div class="col-sm-4 ">
+                            <a href="articles/affordance.html ">
+                  <div class="card ">
+                  <h2 class="card__header ">Affordance</h2>
+                  <p class="card__subheader ">Designing components that visual style indicate their functionality</p>
+                  <p class="card__readmore ">Read Article</p>
                   </div>
                 </div>
                 </a>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid" style="background-color:#222222;color:white;padding-top:16px;padding-bottom:16px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                </div>
-                <div class="col-sm-6" style="text-align:right;">
-                  <p>Contact: <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">danielwpape@gmail.com</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container-fluid " style="background-color:#222222;color:white;padding-top:16px;padding-bottom:16px; ">
+                        <div class="container ">
+                          <div class="row ">
+                            <div class="col-sm-6 ">
+                            </div>
+                            <div class="col-sm-6 " style="text-align:right; ">
+                              <p>Contact: <a href="mailto:danielwpape@gmail.com?subject=Design%20Work%20Enquiry ">danielwpape@gmail.com</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Optional JavaScript -->
+                      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+                      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+                      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T " crossorigin="anonymous "></script>
+                      <script>
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
 
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+                        // Next/previous controls
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
 
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+                        // Thumbnail image controls
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
 
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-    <script>
-        var slideIndex2 = 1;
-        showSlides2(slideIndex);
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides ");
+                          var dots = document.getElementsByClassName("dot ");
+                          if (n > slides.length) {
+                            slideIndex = 1
+                          }
+                          if (n < 1) {
+                            slideIndex = slides.length
+                          }
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none ";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active ", " ");
+                          }
+                          slides[slideIndex - 1].style.display = "block ";
+                          dots[slideIndex - 1].className += " active ";
+                        }
+                      </script>
+                      <script>
+                        var slideIndex2 = 1;
+                        showSlides2(slideIndex);
 
-        // Next/previous controls
-        function plusSlides2(n) {
-            showSlides2(slideIndex += n);
-        }
+                        // Next/previous controls
+                        function plusSlides2(n) {
+                          showSlides2(slideIndex += n);
+                        }
 
-        // Thumbnail image controls
-        function currentSlide2(n) {
-            showSlides2(slideIndex = n);
-        }
+                        // Thumbnail image controls
+                        function currentSlide2(n) {
+                          showSlides2(slideIndex = n);
+                        }
 
-        function showSlides2(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides2");
-            var dots = document.getElementsByClassName("dot2");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+                        function showSlides2(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides2 ");
+                          var dots = document.getElementsByClassName("dot2 ");
+                          if (n > slides.length) {
+                            slideIndex = 1
+                          }
+                          if (n < 1) {
+                            slideIndex = slides.length
+                          }
+                          for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none ";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active ", " ");
+                          }
+                          slides[slideIndex - 1].style.display = "block ";
+                          dots[slideIndex - 1].className += " active ";
+                        }
+                      </script>
 </body>
 
 

@@ -2,492 +2,146 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Profile and recent work of UK-based Designer, Daniel Pape">
-    <meta name="author" content="Daniel Pape">
-    <meta name="theme-color" content="#00897B">
-    <link rel="icon" href="/favicon.ico">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Daniel Pape">
-    <meta property="og:site_name" content="Daniel Pape">
-    <meta property="og:description" content="Profile and recent work">
-    <meta property="og:locale" content="en_US">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Profile and recent work of UK-based Designer, Daniel Pape">
+  <meta name="author" content="Daniel Pape">
+  <meta name="theme-color" content="#00897B">
+  <link rel="icon" href="/favicon.ico">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daniel Pape">
+  <meta property="og:site_name" content="Daniel Pape">
+  <meta property="og:description" content="Profile and recent work">
+  <meta property="og:locale" content="en_US">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
 
-    <title>Daniel Pape: Designer</title>
-    <link href="https://fonts.googleapis.com/css?family=Palanquin:700,300" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik:400i,400" rel="stylesheet">
-    <style>
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            /* font-family: "Rubik", sans-serif; */
-        }
+  <title>Daniel Pape: Designer</title>
+  <link href="https://fonts.googleapis.com/css?family=Palanquin:700,300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400i,400" rel="stylesheet">
 
-        p {
-            font-size: 18px;
-            line-height: 29px;
-            opacity: 0.9;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            border-bottom: 2px solid #00a9e5;
-            padding-bottom: 2px;
-        }
-        
-        a:hover {
-            text-decoration: none;
-            color: inherit;
-            border-bottom: 2px solid #dddddd;
-        }
-
-        .heroImage {
-          display: block;
-          max-width: 310px;
-          margin-left: auto;
-          margin-right: auto;
-          margin-top: 32px;
-        }
-
-        .slideImage {
-          display: block;
-          max-width: 310px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .welcomeText {
-            margin-top: 48px;
-            margin-bottom: 48px;
-        }
-
-        .hello {
-            margin-top: 16px;
-            margin-bottom: 16 px;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        .number {
-            color: #842AC0;
-            margin-bottom: 2px;
-            font-size: 1.2rem;
-        }
-
-        .caseStudy {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            color: black;
-            opacity: 0.3;
-            font-family: 'Rubik', sans-serif;
-        }
-
-        .infoBoxHeader {
-            font-size: 32px;
-            margin-top: 48px;
-        }
-
-        .infoBoxBody {
-            font-size: 19px;
-            line-height: 27px;
-            margin-top: 32px;
-        }
-
-        h1 {
-            font-size: 44px;
-            line-height: 46px;
-            font-family: 'Palanquin', sans-serif;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-family: 'Palanquin', sans-serif;
-            font-weight: 600;
-            font-size: 24px;
-        }
-
-        h4 {
-            font-weight: 400;
-        }
-
-        .navbar-toggler {
-            border: none;
-        }
-
-        #closingMessage {
-            padding: 128px 0px;
-        }
-
-        #closingMessageLink {
-            text-decoration: none;
-            border-bottom: 1px solid #009688;
-            color: #e3e3e3;
-        }
-        /* The dots/bullets/indicators */
-
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        .dot2 {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active,
-        .dot:hover {
-            background-color: #717171;
-        }
-        /* Fading animation */
-
-        .fade2 {
-            -webkit-animation-name: fade2;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade2;
-            animation-duration: 1.5s;
-        }
-
-        @-webkit-keyframes fade2 {
-            from {
-                opacity: 0.5
-            }
-            to {
-                opacity: 1
-            }
-        }
-
-        @keyframes fade2 {
-            from {
-                opacity: 0.5
-            }
-            to {
-                opacity: 1
-            }
-        }
-
-        .mySlides {
-            display: none;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .mySlides2 {
-            display: none;
-            max-width: 400px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        /* Next & previous buttons */
-
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            margin-top: -22px;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 16px;
-            border-width: 0px;
-            opacity: 0.3;
-        }
-
-        .prev {
-            margin-left: -35px;
-        }
-        /* Position the "next button" to the right */
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-            margin-right: -20px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-
-        .prev:hover,
-        .next:hover {
-            opacity: 1.0;
-            border-bottom: 0px;
-        }
-
-        button {
-          -webkit-appearance: none;
-display: flex;
-flex-grow: 0;
-flex-shrink: 0;
-flex-basis: auto;
-align-self: center;
--webkit-box-align: center;
-align-items: center;
--webkit-box-pack: center;
-justify-content: center;
-border-top-left-radius: 4px;
-border-top-right-radius: 4px;
-border-bottom-right-radius: 4px;
-border-bottom-left-radius: 4px;
-font-size: 16px;
-font-weight: 500;
-white-space: nowrap;
-word-break: keep-all;
-transition-duration: 0.2s;
-transition-timing-function: ease-in-out;
-transition-delay: initial;
-transition-property: all;
-cursor: pointer;
-line-height: 1;
-position: relative;
-text-align: center;
-padding-top: 10px;
-padding-right: 20px;
-padding-bottom: 10px;
-padding-left: 20px;
-opacity: 1;
-box-shadow: rgba(0, 0, 0, 0.0392157) 0px 1px 2px;
-border-top-width: 1px;
-border-right-width: 1px;
-border-bottom-width: 1px;
-border-left-width: 1px;
-border-top-style: solid;
-border-right-style: solid;
-border-bottom-style: solid;
-border-left-style: solid;
-border-top-color: rgb(6, 122, 228);
-border-right-color: rgb(6, 122, 228);
-border-bottom-color: rgb(6, 122, 228);
-border-left-color: rgb(6, 122, 228);
-border-image-source: initial;
-border-image-slice: initial;
-border-image-width: initial;
-border-image-outset: initial;
-border-image-repeat: initial;
-color: rgb(255, 255, 255);
-background-color: rgb(6, 132, 248);
-background-image: linear-gradient(rgb(6, 132, 248), rgb(6, 122, 228));
-text-shadow: rgba(0, 0, 0, 0.0784314) 0px 1px 1px;
-        }
-
-        button:hover {
-          background-image: linear-gradient(rgb(6, 153, 255), rgb(6, 141, 255));
-box-shadow: rgba(0, 0, 0, 0.117647) 0px 4px 12px;
-        }
-
-        @media (min-width: 992px) {
-            .next {
-                right: 0;
-                border-radius: 3px 0 0 3px;
-                margin-right: 45px;
-            }
-            .prev {
-                margin-left: 30px;
-
-            }
-
-            .heroImage{
-              max-width: 400px;
-            }
-
-            .slideImage {
-              max-width: 400px;
-            }
-
-            #headertext {
-                margin-top: 202px;
-            }
-            #ESImage {
-                width: 460px;
-                float: right;
-                margin-right: -46px;
-            }
-            .hello {
-                margin-top: 32px;
-                margin-bottom: 32px;
-                width: 100%;
-            }
-            .infoBoxHeader {
-                font-size: 40px;
-                margin-top: 48px;
-            }
-            .infoBoxBody {
-                font-size: 19px;
-                line-height: 27px;
-                style="margin-top:64px;
-
-            }
-            h1 {
-                font-size: 40px;
-                line-height: 60px;
-                width: 60%;
-                margin-bottom: 16px;
-            }
-            #image2 {
-                margin-top: 64px;
-            }
-            #image3 {
-                margin-top: 128px;
-            }
-        }
-    </style>
 </head>
 
 <body style="overflow-x: hidden;">
-    <nav class="navbar navbar-expand-lg navbar-light container" style="margin-top:16px;">
-        <a href="/" style="border-bottom: none;"><svg class="marque" version="1.0" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 414.000000 446.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,446.000000) scale(0.100000,-0.100000)" fill="#212121" stroke="none"><path d="M627 4398 c-93 -89 -529 -512 -572 -555 -24 -23 -41 -44 -38 -47 2 -2 4 -855 4 -1894 l0 -1890 1032 2 c568 1 1047 5 1065 8 18 4 52 10 75 13 385 53 758 188 1051 383 363 240 610 562 755 985 22 64 38 117 36 117 -2 0 2 18 10 39 7 22 16 52 18 68 3 15 12 69 20 118 29 166 37 266 37 470 0 156 -5 264 -16 335 -2 19 -7 55 -10 80 -3 25 -17 99 -31 165 -114 546 -418 982 -886 1273 -82 52 -279 150 -362 181 -33 13 -69 27 -80 31 -64 27 -273 88 -360 105 -78 15 -194 36 -230 40 -22 3 -58 8 -80 11 -22 3 -343 7 -713 9 l-674 2 -51 -49z m1428 -60 c11 -3 47 -9 80 -13 33 -3 114 -18 180 -31 708 -147 1231 -518 1494 -1059 69 -141 143 -363 164 -490 3 -16 8 -48 12 -70 3 -22 8 -51 11 -65 14 -83 19 -181 19 -385 0 -254 -4 -315 -36 -495 -15 -86 -16 -94 -43 -192 -142 -517 -472 -915 -965 -1162 -232 -117 -522 -206 -786 -241 -27 -4 -61 -9 -75 -13 -47 -10 -1363 -14 -1369 -3 -4 5 -8 676 -10 1489 l-3 1480 259 -1 258 -2 0 -1230 c0 -676 3 -1232 7 -1235 10 -8 745 -4 803 4 449 61 776 206 1038 458 247 239 386 546 424 938 8 92 8 279 0 382 -33 378 -166 679 -411 924 -256 255 -589 408 -1021 467 -75 11 -303 13 -1006 13 -500 -1 -909 2 -909 5 0 3 48 52 108 109 59 56 177 171 262 255 85 83 163 156 174 162 19 10 1299 11 1341 1z m-25 -642 c25 -4 77 -11 115 -17 318 -48 633 -189 834 -375 318 -295 453 -702 418 -1258 -4 -60 -9 -111 -11 -115 -2 -3 -7 -28 -10 -56 -23 -169 -106 -383 -212 -543 -189 -283 -524 -489 -934 -571 -173 -35 -231 -39 -555 -38 l-310 2 -2 262 -2 263 302 1 c166 0 313 2 327 5 14 2 48 9 75 15 28 6 61 13 75 15 54 10 200 65 266 100 289 152 460 397 498 713 8 64 8 228 1 291 -45 367 -268 629 -630 743 -72 23 -114 32 -235 52 -32 6 -303 7 -1086 6 l-331 -1 5 -1539 4 -1540 -253 2 -254 2 -1 1796 -1 1796 931 -2 c512 -1 951 -5 976 -9z m50 -620 c115 -21 114 -20 207 -54 173 -61 329 -183 409 -318 88 -151 115 -269 110 -479 -4 -154 -6 -172 -32 -264 -27 -93 -99 -227 -161 -296 -84 -94 -257 -203 -397 -250 -177 -59 -223 -64 -560 -62 l-309 2 -1 858 c-1 473 1 862 4 867 9 14 39 15 344 13 221 -1 324 -5 386 -17z"></path></g></svg></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    Menu
-  </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav mr-auto">
+  <a href="/" style="border-bottom:none;"><nav class="navbar navbar-expand-lg navbar-light container" style="margin-top:16px;">
+      <svg class="marque" version="1.0" xmlns="http://www.w3.org/2000/svg" width="60px" height="60px" viewBox="0 0 414.000000 446.000000" preserveAspectRatio="xMidYMid meet"><g class="inner-marque" transform="translate(0.000000,446.000000) scale(0.100000,-0.100000)" fill="#212121" stroke="none"><path d="M627 4398 c-93 -89 -529 -512 -572 -555 -24 -23 -41 -44 -38 -47 2 -2 4 -855 4 -1894 l0 -1890 1032 2 c568 1 1047 5 1065 8 18 4 52 10 75 13 385 53 758 188 1051 383 363 240 610 562 755 985 22 64 38 117 36 117 -2 0 2 18 10 39 7 22 16 52 18 68 3 15 12 69 20 118 29 166 37 266 37 470 0 156 -5 264 -16 335 -2 19 -7 55 -10 80 -3 25 -17 99 -31 165 -114 546 -418 982 -886 1273 -82 52 -279 150 -362 181 -33 13 -69 27 -80 31 -64 27 -273 88 -360 105 -78 15 -194 36 -230 40 -22 3 -58 8 -80 11 -22 3 -343 7 -713 9 l-674 2 -51 -49z m1428 -60 c11 -3 47 -9 80 -13 33 -3 114 -18 180 -31 708 -147 1231 -518 1494 -1059 69 -141 143 -363 164 -490 3 -16 8 -48 12 -70 3 -22 8 -51 11 -65 14 -83 19 -181 19 -385 0 -254 -4 -315 -36 -495 -15 -86 -16 -94 -43 -192 -142 -517 -472 -915 -965 -1162 -232 -117 -522 -206 -786 -241 -27 -4 -61 -9 -75 -13 -47 -10 -1363 -14 -1369 -3 -4 5 -8 676 -10 1489 l-3 1480 259 -1 258 -2 0 -1230 c0 -676 3 -1232 7 -1235 10 -8 745 -4 803 4 449 61 776 206 1038 458 247 239 386 546 424 938 8 92 8 279 0 382 -33 378 -166 679 -411 924 -256 255 -589 408 -1021 467 -75 11 -303 13 -1006 13 -500 -1 -909 2 -909 5 0 3 48 52 108 109 59 56 177 171 262 255 85 83 163 156 174 162 19 10 1299 11 1341 1z m-25 -642 c25 -4 77 -11 115 -17 318 -48 633 -189 834 -375 318 -295 453 -702 418 -1258 -4 -60 -9 -111 -11 -115 -2 -3 -7 -28 -10 -56 -23 -169 -106 -383 -212 -543 -189 -283 -524 -489 -934 -571 -173 -35 -231 -39 -555 -38 l-310 2 -2 262 -2 263 302 1 c166 0 313 2 327 5 14 2 48 9 75 15 28 6 61 13 75 15 54 10 200 65 266 100 289 152 460 397 498 713 8 64 8 228 1 291 -45 367 -268 629 -630 743 -72 23 -114 32 -235 52 -32 6 -303 7 -1086 6 l-331 -1 5 -1539 4 -1540 -253 2 -254 2 -1 1796 -1 1796 931 -2 c512 -1 951 -5 976 -9z m50 -620 c115 -21 114 -20 207 -54 173 -61 329 -183 409 -318 88 -151 115 -269 110 -479 -4 -154 -6 -172 -32 -264 -27 -93 -99 -227 -161 -296 -84 -94 -257 -203 -397 -250 -177 -59 -223 -64 -560 -62 l-309 2 -1 858 c-1 473 1 862 4 867 9 14 39 15 344 13 221 -1 324 -5 386 -17z"></path></g></svg></a>
+  <span class="hideOver992" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+  Contact: <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">danielwpape@gmail.com</a>
+</span>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
 
-            </ul>
-            <span class="navbar-text">
-      Contact: <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">danielwpape@gmail.com</a>
-    </span>
+    </ul>
+    <span class="navbar-text">
+    Contact: <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">danielwpape@gmail.com</a>
+  </span>
+  </div>
+  </nav>
+  <div class="container" id="Welcome" class="welcomeText">
+    <div class="row">
+      <div class="col-sm-12">
+        <img src="/images/blog_wayfinding.png" style="width:100%;margin-top:32px;">
         </div>
-    </nav>
-    <div class="container-fluid">
-        <div class="container" id="Welcome" class="welcomeText">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <h1 class="hello">Wayfinding</h1>
+        <div class="col-sm-6 offset-sm-4">
+          <h1 class="headline">Wayfinding</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 offset-sm-1">
+          <p style="margin-bottom:0px;font-weight:500;margin-top:6px;" class="introToUXConcepts">Introduction to UX Concepts</p>
+          <p class="authorName">By Daniel Pape</p>
+        </div>
+        <div class="col-sm-7">
 
 
-<p>Wayfinding is the method by which you let users of your site know how to get to other parts of the site. For example, if you land on the homepage of Monocle and you know you want to subscribe to their physical print magazine the link is right there at the top of the page for you to get to that page.</p>
+          <p>Wayfinding is the method by which you let users of your site know how to get to other parts of the site. For example, if you land on the Google homepage but want to sign into your Gmail account, you need to find a way to get the to
+            Gmail login page. Google put a link in the top-right of the homepage which links directly to the Gmail homepage, which shows how simple they want that user-journey to be, but they could have used other techniques such as a menu bar to
+            alllow users to find their way around the site.</p>
 
-<p>Here are my 5 methods to ensure that your digital product has effective wayfinding:</p>
+          <p>Here are my 5 methods to ensure that your digital product has effective wayfinding:</p>
 
-<h2>Create comprehensive user journey flows.</h2>
+          <h2>Create goal-oriented user journey flows</h2>
 
-<p>This will make it clear which page you intend the user to go to next. On a ecommerce user journey, this will often be the next step of the funnel, eg. From basket to checkout. On an editorial website you may want a user to navigate from a section page to an article page. The user journey flows all provide the architecture you can build on to ensure users can find the next step.</p>
+          <p>Keeping the goal of the end-user in mind when designing webpages is essential to create focused user journeys. Listing the next page your user will want to continue to keeps your design focused and informs the heirarchy of the elements
+            on the page. On a ecommerce user journey, this will often be the next step of the funnel, eg. From basket to checkout. On an editorial website you may want a user to navigate from a section page to an article page. The user journey flows
+            all provide the architecture you can build on to ensure users can find the next step.</p>
 
-<h2>Make use of typography on the page</h2>
+          <h2>Use well-weighted typography</h2>
 
-<p>Road signs in the UK use the Transport font, designed by Margaret Calvert in 1958. The use of a white font on a green background is insanely recognisable as a pointer to a location to drive to. You can use this same technique on the web. If your body copy is a serif, you could use a sans-serif for your wayfinding, or use a slightly different colour so that users know they are going to be taken to a new part of the website.</p>
+          <p>Road signs in the UK use the Transport font, designed by Margaret Calvert in 1958. The use of a white font on a green background is instantly recognisable as a pointer to a location to drive to. You can use this same technique on the
+            web. If your body copy is a serif, you could use a sans-serif for your wayfinding, or use consistent colour for links and buttons so that users know they are going to be taken to a new part of the website.</p>
 
-<h2>Limit the amount of signposts</h2>
+          <h2>Limit the amount of signposts</h2>
 
-<p>Some websites are made up of thousands of different pages, and only a small percentage will be relevant to every user, so don’t present every option to every user. You should consider the objectives of each distinct user journey to ensure that the relevant options are displayed. </p>
+            <p>Some websites are made up of thousands of different pages, and only a small percentage will be relevant to every user, so don’t present every option to every user. You should consider the objectives of each distinct user journey to
+            ensure that only the relevant options are displayed. </p>
 
-<h2>Use icons instead of words</h2>
-
-<p>Sometimes guiding users around your website can be done with simple symbols. Most users know what will happen when they tap on 3 vertical lines or a right facing arrow, which would require the words "Menu" or "Back". There are many examples of icon sets that you can use for free on your site but Google's Material design has a set of over XX icons that have sets for almost all website functionality and are designed to be consistent with each other.</p>
-
-<h2>Use gesture design</h2>
-
-<p>On iOS when you're scrolling through a table view, when you select an row the screen slides to the left to reveal the content. This creates a mental model in the user's head that to return to the list of options you need to navigate to the left, and when a left swipe gesture is used that is where the user does. By using interactions that creates a 2D map in the users head, you can let people know where they are on your site.</p>
-
-<p><a href="/">Return to main site</a></p>
+          <h2>Use icons instead of words</h2>
+          <a href="https://material.io/tools/icons/?style=baseline" target="_blank">
+                  <div class="card inline">
+                    <h3 class="infoBoxHeader-sm" style="margin-top: 24px;margin-left:16px;font-size: 14px;font-weight: 500;text-transform: uppercase;opacity:0.7;">Resource</h3>
+                  <h2 style="margin-left:16px;font-size: 20px;">Google Material Icons</h2>
+                  <p style="text-decoration: none;color: inherit;padding-bottom: 0px;margin-left:16px;display:table;font-size:14px;font-weight:600;">Visit resource</p>
                 </div>
-            </div>
+
+              </a>
+          <p>Sometimes guiding users around your website can be done with simple symbols. Most users know what will happen when they tap on a menu icon or a right facing arrow, which would require the words "Menu" or "Back". There are many examples
+            of icon sets that you can use for free on your site but Google's Material design has a set of over 1000 icons that have icons for almost all website functionality and are designed to be consistent with each other.</p>
+
+          <h2>Use gesture design</h2>
+
+          <p>On iOS when you're scrolling through a table view, when you select an row the screen slides to the left to reveal the content. This creates a mental model in the user's head that to return to the list of options you need to navigate to
+            the left, and when a left swipe gesture is used that is where the user does. By using interactions that creates a 2D map in the users head, you can let people build a mental model of how they can navigate around your site.</p>
+            <p style="margin-top:16px;margin-bottom:16px;"><a href="/">Return to main site</a></p>
+
         </div>
+      </div>
     </div>
-    <div class="container-fluid" style="background-color:#222222;color:white;padding-top:16px;padding-bottom:16px;">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 offset-sm-4">
+        <h3 class="infoBoxHeader-sm" style="margin-bottom:24px;margin-top: 24px;font-size: 14px;font-weight: 500;text-transform: uppercase;opacity:0.7;">Related Articles</h3>
+      </div>
+      <div class="col-sm-4 offset-sm-4">
+        <a href="/case-studies/the-independent.html">
+          <div class="card">
+            <h2 class="card__header">The Independent</h2>
+            <p style="padding-left:16px;padding-right:16px;font-size:16px;line-height:1.3;font-weight:400;">Designing components that visual style indicate their functionality</p>
+            <p style="font-size: 16px; font-weight: 600; padding-bottom: 0px; margin-left: 16px; display: table;">Read Article</p>
+          </div>
+        </div>
+        </a>
+        <div class="col-sm-4">
+          <a href="/articles/progressiveDisclosure.html">
+                  <div class="card">
+                  <h2 class="card__header">Progressive Disclosure</h2>
+                  <p style="padding-left:16px;padding-right:16px;font-size:16px;line-height:1.3;font-weight:400;">How to manage the complexity of your information archetecture</p>
+                  <p style="font-size: 16px; font-weight: 600; padding-bottom: 0px; margin-left: 16px; display: table;">Read Article</p>
+                </div>
+              </div>
+              </a>
+
+        </div>
+      </div>
+      <div class="container-fluid" style="background-color:#222222;color:white;padding-top:16px;padding-bottom:16px;">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                  <p>Copyright 2018 Daniel Pape</p>
-                </div>
-                <div class="col-sm-6" style="text-align:right;">
-                  <p>Contact: <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">danielwpape@gmail.com</a></p>
-                </div>
+          <div class="row">
+            <div class="col-sm-6">
             </div>
+            <div class="col-sm-6" style="text-align:right;">
+              <p>Contact: <a href="mailto:danielwpape@gmail.com?subject=Question%20About%20Your%20Work">danielwpape@gmail.com</a></p>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-    <script>
-        var slideIndex2 = 1;
-        showSlides2(slideIndex);
-
-        // Next/previous controls
-        function plusSlides2(n) {
-            showSlides2(slideIndex += n);
-        }
-
-        // Thumbnail image controls
-        function currentSlide2(n) {
-            showSlides2(slideIndex = n);
-        }
-
-        function showSlides2(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides2");
-            var dots = document.getElementsByClassName("dot2");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+      </div>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 </body>
 
 

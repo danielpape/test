@@ -1,0 +1,362 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 18px;
+    line-height: 29px;
+    opacity: 0.9;
+}
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+    transition-duration: 0.1s;
+}
+
+.topnav__link {
+  text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 4px solid #0aaea4;
+    transition-duration: 0.2s;
+}
+
+.heroImage {
+    display: block;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
+
+.slideImage {
+    display: block;
+    max-width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcomeText {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.hello {
+    margin-top: 64px;
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 64px;
+}
+
+.project__header {
+    font-size: 32px;
+    margin-top: 48px;
+}
+
+.project__copy {
+    font-size: 19px;
+    line-height: 27px;
+    margin-top: 32px;
+}
+
+h1 {
+    font-size: 44px;
+    line-height: 46px;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.introToUXConcepts {
+    margin-bottom: 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.3
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.mySlides {
+    display: none;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.mySlides2 {
+    display: none;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 16px;
+    border-width: 0px;
+    opacity: 0.3;
+}
+
+.prev {
+    margin-left: -35px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: -20px;
+}
+
+.prev:hover, .next:hover {
+    opacity: 1.0;
+    border-bottom: 0px;
+}
+
+.card {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.0784314) 0px 4px 8px;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+    transition-property: all;
+    margin-bottom: 24px;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.0980392) 0px 8px 24px;
+    transform: translateY(-3px);
+    transform: scale(1.0125);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+    transition-property: all;
+}
+
+.card__header {
+    margin: 16px;
+    border-bottom: none;
+}
+
+.card__header:hover {
+    border-bottom: none;
+}
+
+.cardImage {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card__readmore {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 0px;
+    margin-left: 16px;
+    display: table;
+}
+
+.card__subheader {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.headline {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.inline {
+    float: left;
+    max-width: 50%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-right: 32px;
+}
+
+.bottom-angle {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 10vw;
+  margin-bottom: -6px;
+}
+
+.standard-container {
+  background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFFFFF, #F2F2F2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFFFFF, #F2F2F2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.independent-container {
+  background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.user-acquisiton-container {
+    background-color: white;
+}
+
+.eve-container {
+    background-image: linear-gradient(to bottom right, #E0EAFC, #CFDEF3);
+}
+
+@media (min-width: 992px) {
+    .inline {
+        margin-left: -37%;
+        max-width: 32%;
+    }
+    .headline {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .hideOver992 {
+        display: none;
+    }
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        margin-right: 45px;
+    }
+    .prev {
+        margin-left: 30px;
+    }
+    .heroImage {
+        max-width: 400px;
+    }
+    .slideImage {
+        max-width: 400px;
+    }
+    .hello {
+        margin-top: 16px;
+        margin-bottom: 0px;
+        font-size: 32px;
+    }
+    .project__header {
+        font-size: 24px;
+        margin-top: 48px;
+        font-weight: 700;
+    }
+    .project__subheader {
+      font-size:24px;
+        opacity: 0.6;
+        color: black;
+        font-weight: 400
+        margin-bottom: 64px;
+
+    }
+    .project__copy {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 16px;
+    }
+    .inner-marque {
+        fill: black;
+    }
+    @media (prefers-color-scheme:dark) {
+        body {
+            background-color: #323232;
+            color: rgba(255, 255, 255, .85)
+        }
+        .inner-marque {
+            fill: white;
+        }
+        .standard-container {
+            background-image: url("/images/background-cross.png");
+            background-repeat: repeat-x;
+        }
+        .independent-container {
+            background-color: #343434;
+        }
+        .user-acquisiton-container {
+            background-color: #292929;
+        }
+        .eve-container {
+            background-color: #343434;
+        }
+        .project__subheader {
+            opacity: 0.6;
+            color: white;
+            font-weight: 400
+        }
+        .articles {
+            background-color: #292929;
+        }
+        .card {
+            background-color: #232323;
+        }
+        .squiggle {
+            width: 80%;
+        }
+        .navbar-light {
+            color: white !important;
+        }
+        .navbar-text a {
+            color: white !important;
+        }
+        .navbar-text {
+            color: white !important;
+        }
+    }
+}
