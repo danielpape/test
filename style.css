@@ -2,7 +2,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
-    color: #212121;
 }
 
 p {
@@ -15,12 +14,9 @@ a {
     font-weight: 400;
     text-decoration: none;
     color: inherit;
+    border-bottom: 2px solid white;
     padding-bottom: 2px;
     transition-duration: 0.1s;
-}
-
-.welcomeSection {
-  background-image: linear-gradient(-35deg, #B9F6CA, #A7FFEB);
 }
 
 .topnav__link {
@@ -57,9 +53,8 @@ a:hover {
 .hello {
     margin-top: 64px;
     margin-bottom: 16px;
-    font-size: 64px;
-line-height: 72px;
-letter-spacing: -1.7px;
+    font-size: 56px;
+    line-height: 64px;
 }
 
 .project__header {
@@ -76,10 +71,12 @@ letter-spacing: -1.7px;
 h1 {
     font-size: 44px;
     line-height: 46px;
+    font-family: 'Palanquin', sans-serif;
     font-weight: 700;
 }
 
 h2 {
+    font-family: 'Palanquin', sans-serif;
     font-weight: 600;
     font-size: 24px;
 }
