@@ -14,9 +14,12 @@ a {
     font-weight: 400;
     text-decoration: none;
     color: inherit;
-    border-bottom: 2px solid white;
     padding-bottom: 2px;
     transition-duration: 0.1s;
+}
+
+.welcomeSection {
+  background-image: linear-gradient(-35deg, #C8E6C9, #B2DFDB);
 }
 
 .topnav__link {
