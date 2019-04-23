@@ -1,0 +1,10 @@
+document.getElementById('name-d').style = "float:left;-webkit-transform: rotate(4deg);transform: rotate(4deg);";
+document.getElementById('name-a1').style = "float:left;-webkit-transform: rotate(12deg);transform: rotate(12deg);";
+document.getElementById('name-n').style = "float:left;-webkit-transform: rotate(-8deg);transform: rotate(-8deg);";
+document.getElementById('name-i').style = "float:left;-webkit-transform: rotate(4deg);transform: rotate(4deg);";
+document.getElementById('name-e1').style = "float:left;-webkit-transform: rotate(4deg);transform: rotate(4deg);";
+document.getElementById('name-l').style = "float:left;-webkit-transform: rotate(4deg);transform: rotate(4deg);";
+document.getElementById('name-p1').style = "float:left;-webkit-transform: rotate(4deg);transform: rotate(4deg);";
+document.getElementById('name-a2').style = "float:left;-webkit-transform: rotate(4deg);transform: rotate(4deg);";
+document.getElementById('name-p2').style = "float:left;-webkit-transform: rotate(4deg);transform: rotate(4deg);";
+document.getElementById('name-e2').style = "float:left;-webkit-transform: rotate(4deg);transform: rotate(4deg);";

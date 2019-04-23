@@ -1,0 +1,102 @@
+$identity-color: #00695C;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  box-sizing: border-box;
+  color: #f4f1d0;
+}
+
+.header {
+  min-height: 80vh;
+  background-color: $identity-color;
+  align-content: center;
+}
+
+.hello {
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  min-width: 80rem;
+}
+
+.hello__titletop {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3.2rem;
+}
+
+#hello__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12rem;
+  letter-spacing: 2.2rem;
+  font-family: hwt-artz, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  position: relative;
+}
+
+.hello__explainer {
+  font-weight: 300;
+  font-size: 2.4rem;
+}
+
+#name-d {
+  animation: in 0.7s ease-out 0.0s;
+  transition: all 0.7s;
+}
+
+#name-a1 {
+  animation: in 0.7s ease-out 0.1s;
+}
+#name-n {
+  animation: in 0.7s ease-out 0.2s;
+}
+#name-i {
+  animation: in 0.7s ease-out 0.3s;
+}
+#name-e1 {
+  animation: in 0.7s ease-out 0.4s;
+}
+#name-l {
+  animation: in 0.7s ease-out 0.5s;
+}
+#name-p1 {
+  animation: in 0.7s ease-out 0.6s;
+}#name-a2 {
+  animation: in 0.7s ease-out 0.7s;
+}#name-p2 {
+  animation: in 0.7s ease-out 0.8s;
+}#name-e2 {
+  animation: in 0.7s ease-out 0.9s;
+}
+
+@keyframes in {
+    0% {
+        opacity: 0;
+        /* transform: translateX(-120px);
+         */
+        transform: translatey(1.6rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatey(0px);
+    }
+}
